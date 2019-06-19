@@ -1,0 +1,21 @@
+﻿@model int
+
+@{
+    ViewBag.Title = "MagicNumber";
+}
+
+<h2>MagicNumber</h2>
+<div>
+    <form action="MakeMagic" method="post">
+        <p>
+            First Number:<input name="fristNumber" type="number" step="1"/>
+        </p>
+        <p>
+            Second Number<input name="secondNumber" type="number" step="1"/>
+        </p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        Random Number is: @Model
+    </p>
+</div>

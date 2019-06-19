@@ -1,0 +1,16 @@
+﻿@model DateTime
+
+@{
+    ViewBag.Title = "DateView";
+}
+
+<h2>DateView</h2>
+<div>
+    <form action="ReceiveDate" method="post">
+        <input name="inputDate" type="date"/>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        @Model
+    </p>
+</div>
