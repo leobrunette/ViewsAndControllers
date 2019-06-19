@@ -12,10 +12,20 @@ namespace ViewsAndControllers.Controllers
         {
             return View(viewName: "DateView",model: DateTime.Today);
         }
+        public ActionResult AgeView()
+        {
+            return View(viewName: "AgeView", model: 0);
+        }
         [HttpPost]
         public ActionResult ReceiveDate(DateTime inputDate)
         {
             return View(viewName: "DateView", model: inputDate);
+        }
+        [HttpPost]
+        public ActionResult CalculateAge(DateTime ageInput)
+        {
+            int age = ageInput.Year;
+            return View(viewName: "AgeView", model: age);
         }
     }
 }

@@ -200,6 +200,7 @@
     <Content Include="Views\SquareANumber\Index.cshtml" />
     <Content Include="Views\SquareANumber\MagicNumber.cshtml" />
     <Content Include="Views\Dates\DateView.cshtml" />
+    <Content Include="Views\Dates\AgeView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
